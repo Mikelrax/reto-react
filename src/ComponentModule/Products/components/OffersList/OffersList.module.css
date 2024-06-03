@@ -1,0 +1,30 @@
+.offersContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #a269b9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.productCard {
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 280px; /* Ajusta según sea necesario */
+}
+
+@media (max-width: 768px) {
+    .productCard {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productCard {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
